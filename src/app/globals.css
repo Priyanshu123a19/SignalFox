@@ -1,3 +1,159 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* SignalFox Light Theme */
+    --background: 28 100% 99%; /* brand-25: #FFFAF5 */
+    --foreground: 22 89% 15%;   /* brand-950: #4E1E05 */
+
+    --card: 28 100% 99%;         /* brand-25: #FFFAF5 */
+    --card-foreground: 22 89% 15%; /* brand-950: #4E1E05 */
+
+    --popover: 28 100% 99%;      /* brand-25: #FFFAF5 */
+    --popover-foreground: 22 89% 15%; /* brand-950: #4E1E05 */
+
+    --primary: 16 91% 54%;      /* brand-500: #F5651D */
+    --primary-foreground: 36 100% 97%; /* brand-50: #FFF5EC */
+
+    --secondary: 30 98% 80%;    /* brand-200: #FECB98 */
+    --secondary-foreground: 22 87% 23%; /* brand-900: #6F2B07 */
+
+    --muted: 33 100% 91%;       /* brand-100: #FFE4C7 */
+    --muted-foreground: 23 88% 29%; /* brand-800: #91390A */
+
+    --accent: 21 93% 61%;       /* brand-400: #F88540 */
+    --accent-foreground: 22 89% 15%; /* brand-950: #4E1E05 */
+
+    --destructive: 0 84% 60%; /* A standard red for warnings */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 33 100% 91%;       /* brand-100: #FFE4C7 */
+    --input: 33 100% 91%;        /* brand-100: #FFE4C7 */
+    --ring: 16 91% 54%;         /* brand-500: #F5651D */
+    
+    --chart-1: 16 91% 54%;       /* brand-500 */
+    --chart-2: 19 89% 37%;       /* brand-700 */
+    --chart-3: 21 93% 61%;       /* brand-400 */
+    --chart-4: 22 87% 23%;       /* brand-900 */
+    --chart-5: 30 98% 80%;       /* brand-200 */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* SignalFox Dark Theme */
+    --background: 22 89% 10%;  /* A darker shade based on brand-950 */
+    --foreground: 36 100% 97%;  /* brand-50: #FFF5EC */
+
+    --card: 22 89% 12%;          /* A slightly lighter dark shade */
+    --card-foreground: 36 100% 97%; /* brand-50: #FFF5EC */
+
+    --popover: 22 89% 10%;       /* A darker shade based on brand-950 */
+    --popover-foreground: 36 100% 97%; /* brand-50: #FFF5EC */
+
+    --primary: 21 93% 61%;       /* brand-400: #F88540 */
+    --primary-foreground: 22 89% 15%; /* brand-950: #4E1E05 */
+
+    --secondary: 23 88% 30%;     /* brand-800: #91390A */
+    --secondary-foreground: 36 100% 97%; /* brand-50: #FFF5EC */
+
+    --muted: 23 88% 30%;         /* brand-800: #91390A */
+    --muted-foreground: 30 98% 80%; /* brand-200: #FECB98 */
+
+    --accent: 18 89% 46%;        /* brand-600: #D95410 */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 72% 51%; /* A standard dark-theme red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 23 88% 30%;        /* brand-800: #91390A */
+    --input: 23 88% 30%;         /* brand-800: #91390A */
+    --ring: 21 93% 61%;          /* brand-400: #F88540 */
+
+    --chart-1: 21 93% 61%;      /* brand-400 */
+    --chart-2: 30 98% 80%;      /* brand-200 */
+    --chart-3: 18 89% 46%;      /* brand-600 */
+    --chart-4: 24 96% 70%;      /* brand-300 */
+    --chart-5: 16 91% 54%;      /* brand-500 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
