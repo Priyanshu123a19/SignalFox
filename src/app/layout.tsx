@@ -15,8 +15,8 @@ const eb_garamond = EB_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: "jStack App",
-  description: "Created using jStack",
+  title: "SignalFox",
+  description: "Real-time SaaS insights delivered to your Discord",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 }
 
